@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <!-- google fonts and fontawesome links -->
+    <!-- bootstrap, google fonts and fontawesome links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -16,10 +19,83 @@
 
     <title>Jungle Card Game</title>
 </head>
+
 <body>
-    <h1>Jungle Card Game</h1>
-    <button class="btn btn-med" >Rules</button>
-    <div class="memory-game"></div>
-    <script src="assets/js/script.js"></script> 
+    <div id="title-box">
+        <h1>Jungle Card Game</h1>
+    </div>
+    <div id="info-box">
+        <button type="button" class="btn btn-primary">Rules</button>
+        <div><h3>Time left: 60s</h3></div>
+    </div>
+    <section id="game-box">
+        <div class="card">
+            <img class="front-face" src="assets/images/chameleon.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/chameleon.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/frog.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/frog.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/monkey.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/monkey.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/panther.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/panther.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/sloth.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/sloth.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/snake.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/snake.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/spider.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/spider.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/toucan.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+        <div class="card">
+            <img class="front-face" src="assets/images/toucan.png" alt="chameleon">
+            <img class="back-face" src="assets/images/leaf.png" alt="leaf">
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

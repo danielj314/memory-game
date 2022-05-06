@@ -1,14 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    box sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(../images/jungle.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    background-position: center center;
     background-color: #0b3a5a;
+}
+
+/* ......................................Title box */
+
+#title-box {
+    background-color: #0b3a5a;
+    width: fit-content;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 50px;
+
 }
 
 h1 {
@@ -16,7 +29,45 @@ h1 {
     color: #63ff5a;
     font-size: 3em;
     letter-spacing: 0.3em;
-    padding-left: 50px;
-    padding-top: 50px;
-
 }
+
+
+/* ......................................Info box */
+
+h3 {
+    color: #63ff5a;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
+
+
+/* ......................................Game box */
+
+#game-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0b3a5acf;
+    margin: auto;
+}
+
+.card {
+    width: 23%;
+    height: 23%;
+    position: relative;
+    margin: 1%;
+}
+
+.front-face,
+.back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+img {
+    position: relative;
+    width: 80%
+} */
