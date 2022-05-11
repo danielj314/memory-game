@@ -1,34 +1,38 @@
 const cards = document.querySelectorAll('.card');
 
 let hasBeenFlipped = false;
+let lockBoard = false;
 let firstCard, secondCard;
 
 // Card flip function
 
 function turnOver() {
+    if (lockBoard) return;
+
     this.classList.add('turn');
 
     if (!hasBeenFlipped) {
     // grab first card
     hasBeenFlipped = true;
     firstCard= this;
-    } else {
+    
+    return;
+    }
+
     // grab second card
     hasBeenFlipped = false;
     secondCard= this;
     
-    checkForMatch()
-    }
+    checkForMatch();
 }
 
     // do cards match?
 function checkForMatch() {
-    if (firstCard.dataset.animal === secondCard.dataset.animal) {
-        keepCardsFlipped()
-    } else {
-        unflipCards()
+    let isMatch = firstCard.dataset.animal === secondCard.dataset.animal;
+        
+    isMatch ? keepCardsFlipped() : unflipCards();
     }
-}
+
 
 // Cards match
 function keepCardsFlipped() {
@@ -38,10 +42,15 @@ function keepCardsFlipped() {
 
 // Cards dont match
 function unflipCards() {
+    lockBoard = true;
+
     setTimeout(() => {
         firstCard.classList.remove('turn');
         secondCard.classList.remove('turn');
-        },  1000);
+    
+        lockBoard = false;
+    }, 1000);
+
 }
 
 cards.forEach(card => card.addEventListener('click', turnOver))
