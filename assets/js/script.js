@@ -4,6 +4,8 @@ let hasBeenFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+var pairsFound = 0;
+
 // Card flip function
 
 function turnOver() {
@@ -24,6 +26,10 @@ function turnOver() {
     secondCard= this;
     
     checkForMatch();
+
+    if (pairsFound === 8){
+        console.log('finished game!!!')
+    }
 }
 
     // do cards match?
@@ -38,8 +44,9 @@ function checkForMatch() {
 function keepCardsFlipped() {
     firstCard.removeEventListener('click', turnOver);
     secondCard.removeEventListener('click', turnOver);
-
-    resetBoard();
+    pairsFound ++;
+    
+    resetCards();
 }
 
 // Cards dont match
@@ -50,14 +57,21 @@ function unflipCards() {
         firstCard.classList.remove('turn');
         secondCard.classList.remove('turn');
 
-        resetBoard();
+        resetCards();
     }, 1000);
 
 }
 
-function resetBoard() {
+function resetCards() {
     [hasBeenFlipped, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
 
 cards.forEach(card => card.addEventListener('click', turnOver))
