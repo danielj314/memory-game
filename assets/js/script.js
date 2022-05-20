@@ -27,8 +27,9 @@ function turnOver() {
     
     checkForMatch();
 
-    if (pairsFound === 8){
-        console.log('finished game!!!')
+    // Show Game Won Message
+    if (pairsFound === 8) {
+        winMessage()
     }
 }
 
@@ -62,9 +63,15 @@ function unflipCards() {
 
 }
 
+// Reset unmatched cards 
 function resetCards() {
     [hasBeenFlipped, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
+}
+
+// Win message
+function winMessage() {
+    //!!!make display modal here and in css!!!
 }
 
 (function shuffle() {

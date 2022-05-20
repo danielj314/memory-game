@@ -90,7 +90,9 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 
 ### Content 
 
-- Instructions on how to create the javascript code for the game area was taken from [Memory Card Game JavaScript Tutorial](https://youtu.be/ZniVgo8U7ek). This specifically included the code used to flip the cards, to recognise whether or not the cards matched and what to do if they matched or not.
+- Instructions on how to create the javascript code for the game area was taken from [Memory Card Game JavaScript Tutorial](https://youtu.be/ZniVgo8U7ek). This specifically included the code used to flip the cards, to recognise whether or not the cards matched and how to keep the matching cards turned over or to reset non-matching pairs.
+
+- The css used to create the modals are created using bootstrap templates from [here](https://getbootstrap.com/docs/4.0/components/modal/).
 
 ### Media
 
