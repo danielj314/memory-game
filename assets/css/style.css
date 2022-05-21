@@ -70,7 +70,8 @@ h1 {
 /* ......................................Info box */
 
 #info-box {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 75px;
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +83,7 @@ h1 {
 
 #game-box {
     width: 500px;
+    max-width: 100%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -183,8 +185,18 @@ h1 {
 
 @media only screen and (max-width: 500px) {
 
+    #title-box {
+        margin-top: 10px;
+    }
+
     #info-box {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    #game-box {
+        max-width: 90vw;
+        max-height: 90vw;
+        margin-bottom: 10px;
     }
 }
