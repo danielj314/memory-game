@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(../images/5371964.jpg) no-repeat center center fixed; 
+    background: url(../images/5371964.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,7 +32,7 @@ body {
 
 .btn:hover {
     background-color: #14bc0c;
-  }
+}
 
 .btn:active {
     transform: translateY(3px) translatex(3px);
@@ -109,7 +109,7 @@ h1 {
     transform: rotateY(180deg);
 }
 
-.card.turn{
+.card.turn {
     transform: rotateY(180deg);
 }
 

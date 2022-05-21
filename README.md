@@ -8,6 +8,7 @@ The site is built using html CSS and JavaScript.
 
 <!-- ![Responsive Mockup](media/love_maths_mockup.png) -->
 
+
 ## Website Features 
 
 
@@ -17,12 +18,12 @@ The site is built using html CSS and JavaScript.
 
 ![Heading](assets/images/title.png)->
 
-- __Information and controls__
+- __Buttons area__
 
   - Rules button: When clicked, the 'Rules' button opens a modal explaining how the game works and how a player can complete the game.
   - Reset button: When clicked, the 'reset' button resets the game to the starting point.
 
-<!-- ![Rules](assets/images/buttons.png)
+![Buttons](assets/images/buttons.png)
 
 - __The Game Area__
 
@@ -31,13 +32,7 @@ The site is built using html CSS and JavaScript.
   - The images selected for the front faces of the cards are brightly coloured and easily distinguishable from one another.
   - The back of the cards have a more neutral colour in order to ensure that they are easily distignuishable from the animals on the front of the cards.
 
-<!-- ![Game](media/love_maths_icons.png) -->
-
-- __The Timer__
-
-  - The timer is located directly above the game area and coloured red in order to make it easily visible when the user is playing
-  
-<!-- ![Question](media/love_maths_question.png) -->
+![Game Area](assets/images/game-area.png)
 
 
 

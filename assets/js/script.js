@@ -41,16 +41,16 @@ function turnOver() {
     this.classList.add('turn');
 
     if (!hasBeenFlipped) {
-    // grab first card
-    hasBeenFlipped = true;
-    firstCard= this;
-    
-    return;
+        // grab first card
+        hasBeenFlipped = true;
+        firstCard = this;
+
+        return;
     }
 
     // grab second card
-    secondCard= this;
-    
+    secondCard = this;
+
     checkForMatch();
 
     // Show Game Won Message
@@ -60,20 +60,20 @@ function turnOver() {
     }
 }
 
-    // do cards match?
+// do cards match?
 function checkForMatch() {
     let isMatch = firstCard.dataset.animal === secondCard.dataset.animal;
-        
+
     isMatch ? keepCardsFlipped() : unflipCards();
-    }
+}
 
 
 // Cards match
 function keepCardsFlipped() {
     firstCard.removeEventListener('click', turnOver);
     secondCard.removeEventListener('click', turnOver);
-    pairsFound ++;
-    
+    pairsFound++;
+
     resetCards();
 }
 
@@ -117,10 +117,9 @@ function resetGame() {
 
 function addClickListener() {
     cards.forEach(card => card.addEventListener('click', turnOver))
-    }
+}
 
 (function newGame() {
     shuffle()
     addClickListener()
 })();
-
