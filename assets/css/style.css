@@ -7,7 +7,7 @@
 body {
     background-image: url(../images/jungle.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     height: 100vh;
     background-position: center center;
     background-color: #0b3a5a;
@@ -37,10 +37,10 @@ body {
     max-width: 90%;
     margin: auto;
     margin-top: 50px;
-
 }
 
 h1 {
+    width: auto;
     font-family: 'Fredoka One', cursive;
     color: #63ff5a;
     font-size: 3em;

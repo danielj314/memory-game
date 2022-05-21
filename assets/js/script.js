@@ -5,8 +5,6 @@ const rulesBtn = document.getElementsByClassName("rules-btn");
 const resetBtn = document.getElementsByClassName("reset-btn");
 
 
-
-
 let hasBeenFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -24,14 +22,15 @@ function closeRules() {
     rulesModal.style.display = "none";
 }
 
-function resetGame() {
-    // cards.classList.remove('turn');
-    // pairsFound === 0;
-    console.log('reset')
+function playAgain() {
+    winModal.style.display = "none";
+    resetGame()
 }
 
-
-
+// Win message
+function winMessage() {
+    winModal.style.display = "block";
+}
 
 // Card flip function
 
@@ -56,6 +55,7 @@ function turnOver() {
 
     // Show Game Won Message
     if (pairsFound === 8) {
+        console.log('winner')
         winMessage()
     }
 }
@@ -86,7 +86,7 @@ function unflipCards() {
         secondCard.classList.remove('turn');
 
         resetCards();
-    }, 1000);
+    }, 500);
 
 }
 
@@ -96,16 +96,31 @@ function resetCards() {
     [firstCard, secondCard] = [null, null];
 }
 
-// Win message
-function winMessage() {
-    winModal.style.display = "block";
-}
 
-(function shuffle() {
+// Shuffle cards
+function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     });
+}
+
+// Reset game
+function resetGame() {
+    cards.forEach(card => card.classList.remove('turn'));
+    addClickListener()
+    shuffle();
+    resetCards();
+    hasBeenFlipped = false;
+    pairsFound = 0;
+}
+
+function addClickListener() {
+    cards.forEach(card => card.addEventListener('click', turnOver))
+    }
+
+(function newGame() {
+    shuffle()
+    addClickListener()
 })();
 
-cards.forEach(card => card.addEventListener('click', turnOver))
