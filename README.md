@@ -97,4 +97,5 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 ### Media
 
 - All of the images used for this site were taken from [mixkit.co](https://mixkit.co/) - a site that offers free stock photos and images.
+- Background image was taken from [freepik]("https://www.freepik.com/vectors/flat-nature") (Flat nature vector created by freepik - www.freepik.com) a site that offers free stock photos and images.
  

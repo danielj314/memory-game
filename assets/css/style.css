@@ -5,12 +5,13 @@
 }
 
 body {
-    background-image: url(../images/jungle.png);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    height: 100vh;
-    background-position: center center;
-    background-color: #0b3a5a;
+    background: url(../images/5371964.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #163a38;
+    /* css code to fill background with image on all devices found here: https://css-tricks.com/perfect-full-page-background-image/ */
 }
 
 
@@ -18,11 +19,11 @@ body {
 
 .btn {
     background-color: #63ff5a;
-    color: #0b3a5a;
+    color: ##163a38;
     width: 40%;
     height: 65%;
     margin: auto;
-    border: solid 2px #0b3a5a;
+    border: solid 2px #163a38;
     box-shadow: 3px 3px;
     font-family: 'Fredoka One', cursive;
     font-size: medium;
@@ -32,7 +33,7 @@ body {
 /* ......................................Title box */
 
 #title-box {
-    background-color: #0b3a5a;
+    background-color: #163a38;
     width: fit-content;
     max-width: 90%;
     margin: auto;
@@ -67,7 +68,7 @@ h1 {
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #0b3a5acf;
+    background-color: #163a38;
     margin: auto;
 }
 
@@ -137,7 +138,7 @@ h1 {
 
 .modal-header {
     text-align: center;
-    border-bottom: solid #0b3a5a;
+    border-bottom: solid #163a38;
     padding: 20px;
     margin-bottom: 50px;
 }
