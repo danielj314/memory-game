@@ -24,11 +24,11 @@
     </div>
     <div id="info-box">
         <!-- Rules button -->
-        <button type="button" class="rules-btn btn">Rules</button>
+        <button type="button" class="rules-btn btn" onclick="openRules()">Rules</button>
         <!-- Reset game button -->
-        <button type="button" class="reset-btn btn">Reset</button>
+        <button type="button" class="reset-btn btn" onclick="resetGame()">Reset</button>
     </div>
-    <!-- Game container -->
+<!-- Game container -->
     <section id="game-box">
         <div class="card" data-animal="chameleon">
             <img class="front-face" src="assets/images/chameleon.png" alt="chameleon">
@@ -96,10 +96,9 @@
         </div>
     </section>
 
-    <!-- Modals -->
+<!-- Modals -->
         <!-- Rules Modal -->
-             
-    <section class="rules-modal">
+    <section class="rules-modal" id="rules-modal">
         <div class="modal">
             <div class="modal-header">
                 <h2 class="modal-title">Rules</h2>
@@ -110,7 +109,7 @@
                 <p>- If you find all eight pairs, you win!</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn close-modal">Let's Play!</button>
+                <button type="button" class="btn play-btn" onclick="closeRules()">Let's Play!</button>
             </div>
         </div>
     </section>
@@ -126,10 +125,11 @@
                 <p>Click the button below to play again.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn close-modal reset-game">Play again!</button>
+                <button type="button" class="btn reset-btn">Play again!</button>
             </div>
         </div>
     </section>
+
 
 <!-- Scripts -->
     <script src="assets/js/script.js"></script>

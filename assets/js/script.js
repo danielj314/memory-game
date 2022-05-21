@@ -1,11 +1,35 @@
 const cards = document.querySelectorAll('.card');
-const winModal = document.getElementsByClassName("win-modal");
+const winModal = document.getElementById("win-modal");
+const rulesModal = document.getElementById("rules-modal");
+const rulesBtn = document.getElementsByClassName("rules-btn");
+const resetBtn = document.getElementsByClassName("reset-btn");
+
+
 
 
 let hasBeenFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let pairsFound = 0;
+
+// Events
+
+// listen for rules modal
+
+function openRules() {
+    rulesModal.style.display = "block";
+}
+
+function closeRules() {
+    rulesModal.style.display = "none";
+}
+
+function resetGame() {
+    // cards.classList.remove('turn');
+    // pairsFound === 0;
+    console.log('reset')
+}
+
 
 
 
