@@ -15,17 +15,19 @@ The site is built using html CSS and JavaScript.
 
   - Featured at the top of the page, the Jungle Card Game h1 heading is easily visible for the user. Upon opening the page, the user will immediately be able to see the name of the game.
 
-<!-- ![Heading](media/love_maths_icons.png) -->
+![Heading](assets/images/title.png)->
 
-- __Rules Button__
+- __Information and controls__
 
-  - When clicked, the 'Rules' button opens a window explaining how the game works and how a player can win.
+  - Rules button: When clicked, the 'Rules' button opens a modal explaining how the game works and how a player can complete the game.
+  - Reset button: When clicked, the 'reset' button resets the game to the starting point.
 
-<!-- ![Rules](media/love_maths_icons.png) -->
+<!-- ![Rules](assets/images/buttons.png)
 
 - __The Game Area__
 
-  - This section will allow the user to play the card game. The cards are spaced out evenly.Each card in the grid is clear for the player to see at different screen sizes.
+  - This section will allow the user to play the card game. The cards are spaced out evenly.Each card in the grid is clear for the player to see at different screen sizes. 
+  - The cards have an 'active' css effect which ensures the player understands that the card is clickable/responsive.
   - The images selected for the front faces of the cards are brightly coloured and easily distinguishable from one another.
   - The back of the cards have a more neutral colour in order to ensure that they are easily distignuishable from the animals on the front of the cards.
 
@@ -97,5 +99,9 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 ### Media
 
 - All of the images used for this site were taken from [mixkit.co](https://mixkit.co/) - a site that offers free stock photos and images.
+
 - Background image was taken from [freepik]("https://www.freepik.com/vectors/flat-nature") (Flat nature vector created by freepik - www.freepik.com) a site that offers free stock photos and images.
+
+- Music track was taken from [Pixabay](https://pixabay.com/music/search/forest/) a site that offers free audio tracks.
+
  

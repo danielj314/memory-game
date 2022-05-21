@@ -19,7 +19,7 @@ body {
 
 .btn {
     background-color: #63ff5a;
-    color: ##163a38;
+    color: #163a38;
     width: 40%;
     height: 65%;
     margin: auto;
@@ -49,6 +49,11 @@ body {
     max-width: 90%;
     margin: auto;
     margin-top: 50px;
+    display: flex;
+}
+
+.title {
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -58,6 +63,7 @@ h1 {
     font-size: 3em;
     letter-spacing: 0.3em;
     text-align: center;
+    margin: 10px;
 }
 
 
@@ -172,3 +178,13 @@ h1 {
     padding: 10px;
 }
 
+
+/* ......................................Modals */
+
+@media only screen and (max-width: 500px) {
+
+    #info-box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
