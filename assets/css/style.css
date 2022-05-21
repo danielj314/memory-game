@@ -30,6 +30,17 @@ body {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #14bc0c;
+  }
+
+.btn:active {
+    transform: translateY(3px) translatex(3px);
+    box-shadow: 0px 0px;
+
+
+}
+
 /* ......................................Title box */
 
 #title-box {
@@ -79,7 +90,13 @@ h1 {
     margin: 1%;
     transform-style: preserve-3d;
     cursor: pointer;
+    transform: scale(1);
 
+}
+
+.card:hover {
+    transform: scale(.95);
+    transition: transform .2s;
 }
 
 .front-face {
@@ -128,7 +145,6 @@ h1 {
     border: solid 10px #63ff5a;
     font-family: 'Fredoka One', cursive;
     background-color: white;
-    border-radius: 20px;
     margin: auto;
     margin-top: 10%;
     padding: 50px;
