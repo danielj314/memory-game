@@ -13,6 +13,22 @@ body {
     background-color: #0b3a5a;
 }
 
+
+/* ......................................Buttons */
+
+.btn {
+    background-color: #63ff5a;
+    color: #0b3a5a;
+    width: 40%;
+    height: 65%;
+    margin: auto;
+    border: solid 2px #0b3a5a;
+    box-shadow: 3px 3px;
+    font-family: 'Fredoka One', cursive;
+    font-size: medium;
+    cursor: pointer;
+}
+
 /* ......................................Title box */
 
 #title-box {
@@ -43,12 +59,6 @@ h1 {
     margin: auto;
 }
 
-.btn {
-    width: 40%;
-    height: 80%;
-    margin: auto;
-}
-
 
 /* ......................................Game box */
 
@@ -67,6 +77,7 @@ h1 {
     position: relative;
     margin: 1%;
     transform-style: preserve-3d;
+    cursor: pointer;
 
 }
 
@@ -86,3 +97,61 @@ h1 {
     height: 100%;
     backface-visibility: hidden;
 }
+
+
+/* ......................................Modals */
+
+.rules-modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.win-modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    border: solid 10px #63ff5a;
+    font-family: 'Fredoka One', cursive;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 50px;
+    width: fit-content;
+    line-height: 200%;
+}
+
+.modal-header {
+    text-align: center;
+    border-bottom: solid #0b3a5a;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.modal-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* code to center button found at https://www.w3schools.com/howto/howto_css_center_button.asp */
+}
+
+.close-modal {
+    padding: 10px;
+}
+

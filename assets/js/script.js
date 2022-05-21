@@ -1,10 +1,13 @@
 const cards = document.querySelectorAll('.card');
+const winModal = document.getElementsByClassName("win-modal");
+
 
 let hasBeenFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let pairsFound = 0;
 
-var pairsFound = 0;
+
 
 // Card flip function
 
@@ -71,7 +74,7 @@ function resetCards() {
 
 // Win message
 function winMessage() {
-    //!!!make display modal here and in css!!!
+    winModal.style.display = "block";
 }
 
 (function shuffle() {
