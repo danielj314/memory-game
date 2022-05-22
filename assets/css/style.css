@@ -37,8 +37,6 @@ body {
 .btn:active {
     transform: translateY(3px) translatex(3px);
     box-shadow: 0px 0px;
-
-
 }
 
 /* ......................................Title box */
@@ -99,7 +97,6 @@ h1 {
     transform-style: preserve-3d;
     cursor: pointer;
     transform: scale(1);
-
 }
 
 .card:hover {

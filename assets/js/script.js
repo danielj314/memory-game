@@ -12,7 +12,7 @@ let pairsFound = 0;
 
 // Events
 
-// listen for rules modal
+// Modals open and close
 
 function openRules() {
     rulesModal.style.display = "block";
@@ -55,7 +55,6 @@ function turnOver() {
 
     // Show Game Won Message
     if (pairsFound === 8) {
-        console.log('winner')
         winMessage()
     }
 }
@@ -87,7 +86,6 @@ function unflipCards() {
 
         resetCards();
     }, 500);
-
 }
 
 // Reset unmatched cards 
