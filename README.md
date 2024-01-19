@@ -6,7 +6,6 @@ This is a memory card game designed for children. The aim of the game is to turn
 
 The site is built using html CSS and JavaScript.
 
-TESTIIIIIINGGGG
 
 ![Fullscreen image](assets/images/fullscreen.png)
 
